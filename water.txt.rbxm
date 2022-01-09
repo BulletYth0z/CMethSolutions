@@ -1,137 +1,0 @@
-<roblox!‰ÿ
-
-     "           META$   "       ğ      ExplicitAutoJoints   trueINST!   6       ğ        Frame 	  INST"   0       ÿ      LocalScript   `"INST          ğ   	   ScreenGui        INST!          ğ      ScrollingFrame       (INST          ğ	      TextBox       *INST!   /       ÿ   
-   TextButton   `&INST$   >       ÿ   	   TextLabel 
-   PROP          ğ	       Active         PROP"   \       ğ       AnchorPoint  ,P     PROP*   @       ğ       AttributesSerialize  P     PROP           ğ       AutoLocalizePROP$   :       ğ       AutomaticSize  P     PROPB   …       õ       BackgroundColor3{}}{A     	 Ÿ‚B    ‚ $ 0P   ‚ PROP5   C       ğ       BackgroundTransparency    (  P     PROPa          ğ	       BorderColor3}}{ P|{))± %Ñ±	 Â**²´´´´Ò´}}| 0))Q %ÑQ	 0**R 'ÒR$ © %Ñ©	 **ª¬¬¬¬Ò¬PROP!   7       ğ    
-   BorderMode  P     PROP*   <       ğ	       BorderSizePixel      PROP$   "       ğ       ClipsDescendants         PROP          ğ    	   Draggable         PROP"   8       ğ       LayoutOrder  P     PROP]   _       Ğ       Name	 ğ
-Main   Top
-   ButtonList ĞLine   Pages ñHome   Scripts °lder   ExePROP,   >       ğ       NextSelectionDown          PROP,   >       ğ       NextSelectionLeft          PROP-   ?       ğ       NextSelectionRight          PROP*   <       ğ	       NextSelectionUp          PROPh   ¡       ğK       Position|  wyttvtó  ÇXXXœ  qcc$cÎ  rÈ££ß£|vz~|xxxxÒë»-©²i…»{@@û@C¼tè Z  +P     PROP0   B       ğ       RootLocalizationTable          PROP   5       ğ       Rotation  P     PROP          ğ    
-   Selectable         PROP/   A       ğ       SelectionImageObject          PROP6          Ğ       Size  C €€€nVVVXVh P    0<’’Œ’PROP%   ;       ğ       SizeConstraint  P     PROP(   ^       ğ       SourceAssetId  (PROP   2       à       Style  P     PROP   1       Ğ       Tags  P     PROP          ğ
-       Visible  PROP!   3       ğ        ZIndex  PROP(   4       ğ      AttributesSerialize  P     PROP          ğ      Disabled      PROP!   -       ğ      LinkedSource  P     PROP-   c       ÿ      Name   LocalScript )°   DragifyPROP        ñ.   
-   ScriptGuid&   {7F7BF458-8376-4365-9926-DD6114FD2A83}* ò3F72285B-4FED-4C1F-A59C-6D6979F66A85* ó7FE0799A-6209-4252-8A80-4806A5CF221T òA4CDA8D8-642C-4F4A-AA65-5235AA5A7EBDT ò47D642FA-00BC-4D36-97AA-C641A54F6A69* ğ651E2309-2CA8-4E5A-90A9-808082CC5038}PROPó  ²!      ş      Sourceı  local List = script.Paren Zges
-
-# òMouseButton1Click:Connect(function()
-	d 0TabD g ğName:gsub("P","")
-	
-	for _,v in pairs(¢ ñ
-:GetChildren()) do
-		if vD 5 ~=d ğ	then v.Visible = false e  ¡true end
-	 x  
-ğ 
-ù š 
-H °  ¥ ò
-
-			v.BackgroundColor3 = 	 Ò.fromRGB(81,  @)
-		È : C103, ; í Oend)ÿÿÿÿÿõ$äğlua_keywords = {"and", "break	  do  | !if
- ( c  1for   1got= 1 i  	 "ni  ot = Qrepea Qretur1  0 "  µ  2unt: while"}
-R ± global_envÆ ágetrawmetatabl9 1gam workspac ¡  @math `string
- : Aprin– 1wai QBrick¬ ( 	 3
- 1nex  ½  i
- Qselec Qunpac[bInstan‰ pVector25  Q 3CFr¶ 0Ray AUDim% @Enum QasserX 2err #wa:ig FloadÖ  _G7 Qshareéqgetfenv  qnewproxt :setI  os= Adebu7ApcalÛy
- x
- brawequQrawse» Brawg
- qtonumbeK&to¶ 1typ°  o€€_VERSION| coroutin# 2del,arequir Pspawn* ¤LoadLibrarÛ AtingÁ Astat	 "ti)WUserS! CversÚ1Axe+ ûSSequeÇ?Fac  SKeypoDNà ARangš  C 
- ; QgcinfRƒelapsedTª 0col^RgarbaW òPhysicalProperti• RƒaRegionb Pint16! a  …2  3 P
-	"evÆó
-	"crystalize"
-}
-`random‹![[?(( õmeth on top")]],  `ez hax }q°CodeBox.Tex±] [². B(1,#
- $)]ƒ ïyL ¨ @Lineø H €Highlighz àš$, ;b)
-    ‹K÷ } S… W qToken = {   S["="]£, . , ( ) [ ] { } : * / + - % [		["; ~ Sœ m7i, nÍ d   4K[v‘=  3   ÕSÂ6.",c  "ifç0[c]¨@nil ÏH  êe "\32"  o   & c ‡  Ñ  ?%S+’ K h Š ·(" "):rep(#ñ – ™ »  S
- wh y7R<H$ "ÿj‡RA = "›¤õ0 T KA ..iÎif c == "\n"*5   2 t2 7			) t¹   T' 	|áZÄAÄÅÅh>FWEquot¤e P ^: ß4and6" ï  .  @g    J   I òJ .  R & S  â,  ­ < H *
- ^ < =ß 1ÌL ç–(J ¬Œ ´ucomment´ reI‚¹–[^\r\n]^e }( Ui = 0 cV 	?n  2 Ui + 16    ÷r:sub(i, )L?"--    ø    “    X + â    :.. m «	©    * 0 
-À  „ t 8 R   U)reß<Ş ÷Ü	†Ô4if –?(c)È W Ó§Ÿ4!_s, ÆĞ(z )
-y 
-  ""q"		o£ å!\1p é, 1 Ÿ  ÙY I KÁ_ ´9(s,ã C G24 O2 eRemote\ : ¢{"FireServÆf WInvok i }l  1
-'(s# )$ ş	$ S¾$ Î$ V´lin = 1
-		s« +™
- r 	%    ‹Q  )uA""
-	Ã ´!1,. ­
-'  @.. i	 r  Ñ¦,
-
-(p3)
-
-Á ChEd}1 T)
-
-³è UI!  P ŸiS  äDInpu 4")
-ù ‘ dragify(„–  PTogglº1nilŒG  ²Speed = 0.5æ  _ /   @StarC  Poæ Œ aupdateK  (i°     Delta =  P.Posiˆ! -Æ o ¬   1 #  = ôp2.new(s˜ ×Pos.X.Scale,  ‚Offset +l '.X Y/ Y/ Y² †UTween‚r:Createx!,  AInfo¢ ‡0.15), {¿  ‚}):Play(i W¾.:UBegan/\P2if  .Tò u
- 	3 or€: aTouch)#
-0UIS–@FocuÖqextBox(Ô4 C‡ ‹	Ü    ò	' Ú# =$H	& Pk<l ,if0Staê? N.Endê  Ê è R	œ   ç '    é Ó ò Ø Ğ @Movef
-  ° Íİ W†[û  ¼ˆ  '  ™»«	³   
-I  d€Prent)PROP0   F       ÿ      SourceAssetId    R ptPROP   %       À      Tags  P     PROP"           ğ      AttributesSerialize    PROP          ğ      AutoLocalizePROP          ğ
-      DisplayOrder    PROP          ğ      EnabledPROP          ğ	      IgnoreGuiInsetPROP          ğ      Name   GUIPROP          ğ      ResetOnSpawn PROP$   "       ğ      RootLocalizationTable   PROP           ğ      SourceAssetId       PROP          ğ      Tags    PROP          ğ      ZIndexBehavior   PROP          ğ      Active PROP          ğ      AnchorPoint        PROP"           ğ      AttributesSerialize    PROP          ğ      AutoLocalizePROP"           ğ      AutomaticCanvasSize    PROP          ğ      AutomaticSize    PROP'   %       ğ      BackgroundColor3{‚{‚{‚PROP%   #       ğ      BackgroundTransparency    PROP#   !       ğ      BorderColor3|ÑÑÒ|ÑÑÒ|ÑÑÒPROP          ğ   
-   BorderMode    PROP          ğ      BorderSizePixel   PROP0   .       ğ      BottomImage   rbxassetid://148970562PROP!          ğ      CanvasPosition        PROP   #       ö   
-   CanvasSize  P   'PROP          ğ      ClipsDescendantsPROP          ğ   	   Draggable PROP          ğ      ElasticBehavior   PROP'   %       ğ      HorizontalScrollBarInset   PROP          ğ	      LayoutOrder    PROP-   +       ğ      MidImage   rbxassetid://148970562PROP          ğ      Name   ScrollPROP           ğ      NextSelectionDown   PROP           ğ      NextSelectionLeft   PROP!          ğ      NextSelectionRight   PROP          ğ      NextSelectionUp   PROP#   !       ğ      PositionuÏGx¸Ä        PROP$   "       ğ      RootLocalizationTable   PROP          ğ      Rotation    PROP+   )       ğ      ScrollBarImageColor3         PROP)   '       ğ      ScrollBarImageTransparency    PROP!          ğ      ScrollBarThickness    PROP!          ğ      ScrollingDirection   PROP          ğ      ScrollingEnabledPROP          ğ   
-   SelectablePROP#   !       ğ      SelectionImageObject   PROP          å      Size  `X  ŒPROP          ğ      SizeConstraint    PROP           ğ      SourceAssetId       PROP          ğ      Tags    PROP-   +       ğ      TopImage   rbxassetid://148970562PROP%   #       ğ      VerticalScrollBarInset    PROP(   &       ğ      VerticalScrollBarPosition    PROP          ğ      VisiblePROP          ğ      ZIndex   PROP          ğ      ActivePROP          ğ      AnchorPoint        PROP"           ğ      AttributesSerialize    PROP          ğ      AutoLocalizePROP          ğ      AutomaticSize    PROP'   %       ğ      BackgroundColor3|ÉÉ’|ÉÉ’|ÉÉ’PROP%   #       ğ      BackgroundTransparency   PROP#   !       ğ      BorderColor3{±±´|QQR|©©¬PROP          ğ   
-   BorderMode    PROP          ğ      BorderSizePixel    PROP          ğ      ClearTextOnFocus PROP          ğ      ClipsDescendants PROP          ğ   	   Draggable PROP          @    Font   
-PROP          ğ	      LayoutOrder    PROP          ğ   
-   LineHeight   PROP"           ğ      MaxVisibleGraphemes   PROP          ğ   	   MultiLinePROP          @    ğName   CodeBoxPROP           ğ      NextSelectionDown   PROP           ğ      NextSelectionLeft   PROP!          ğ      NextSelectionRight   PROP          ğ      NextSelectionUp   PROP(   &       ğ      PlaceholderColor3~™™š~™™š~™™šPROP          ğ      PlaceholderText    PROP   !       ö      Position  P<   PROP          ğ      RichText PROP$   "       ğ      RootLocalizationTable   PROP          ğ      Rotation    PROP          ğ   
-   SelectablePROP#   !       ğ      SelectionImageObject   PROP          ğ
-      ShowNativeInputPROP          @    ğSize    ‹iš  ş    PROP          ğ      SizeConstraint    PROP           ğ      SourceAssetId       PROP          @    Tags    PROP)   (       @    ğText   print("crystalmeth #1")PROP!          ğ   
-   TextColor3         PROP          ğ      TextEditablePROP          ğ   
-   TextScaled PROP          ğ      TextSize‚À  PROP'   %       ğ      TextStrokeColor3            PROP%   #       ğ      TextStrokeTransparency   PROP          ğ      TextTransparency    PROP          ğ
-      TextTruncate    PROP          ğ      TextWrappedPROP          ğ      TextXAlignment    PROP          ğ      TextYAlignment    PROP          ğ      VisiblePROP          ğ      ZIndex   PROP          ğ      ActivePROP    D       ÿ      AnchorPoint  P     PROP'   4       ş      AttributesSerialize  P     PROP           ğ      AutoButtonColorPROP          ğ      AutoLocalizePROP!   .       ş      AutomaticSize  P     PROPA   a       ñ      BackgroundColor3} bEEEAA aFFFBB }   PFFFBBPROP*   7       ş      BackgroundTransparency  P     PROP=   ]       ñ      BorderColor3{ ± ´ | Q R  '|© `¬¬¬¬¬¬PROP   +       ş   
-   BorderMode  P     PROP#   0       ş
-      BorderSizePixel  P     PROP!          ğ      ClipsDescendants      PROP          ğ	   	   Draggable      PROP   %       í      Font  `------PROP   ,       ş      LayoutOrder  P     PROP"   +       ñ   
-   LineHeight   P     PROP(   4       ı      MaxVisibleGraphemes  `PROP          @    ÀModal      PROPH   H       Ğ      Name PHomeP ğExeP   ScriptsP   OtherP' ğClear   ExecutePROP&   2       ı      NextSelectionDown  `     PROP&   2       ı      NextSelectionLeft  `     PROP'   3       ı      NextSelectionRight  `     PROP$   0       ı
-      NextSelectionUp  `     PROPM   q       ÿ3      Positiony{|}~~ ®fÎ‡ f\øğ zd(ø4}}}}~~ââhhhĞĞrffææ  P     PROP          ğ      RichTextPROP*   6       ı      RootLocalizationTable  `     PROP   )       ş      Rotation  P     PROP          ğ
-   
-   SelectablePROP          ğ      Selected      PROP)   5       ı      SelectionImageObject  `     PROP"   m       ï      Size  .n`LdVjšG `((((((PROP"   /       ş	      SizeConstraint  P     PROP#   F       ÿ      SourceAssetId  `PROP   &       @    ~Style  P     PROP   %       î      Tags  P     PROPW   n       ò      Text   <b>Home</b>
- !Ex  pScripts   WOther AClea   °Execute</b>PROP5   [       ñ   
-   TextColor3~ s t  ~ s  PtttttPROP          ğ
-   
-   TextScaled      PROP'   )       ñ      TextSize‚ À À            PROP%   a       ÿ      TextStrokeColor3  /P     PROP.   7       ñ      TextStrokeTransparency   P     PROP$   1       ş      TextTransparency  P     PROP    -       ş      TextTruncate  P     PROP          ğ      TextWrapped      PROP#   /       ı	      TextXAlignment  `PROP#   /       ı	      TextYAlignment  `PROP          ğ      VisiblePROP   '       ı      ZIndex  `PROP          @    ğActive          PROP    d       ÿ      AnchorPoint  7P     PROP(   D       ÿ      AttributesSerialize  P     PROP!          ğ      AutoLocalizePROP"   >       ÿ      AutomaticSize  P     PROP8   ‘       ô      BackgroundColor3 ${  ‘	 
- ”' ( 0P    ”PROP/   G       ô      BackgroundTransparency   P     PROPT          õ      BorderColor3{ ± A	 4±A´ $B| ${Q A	 4QAR ( © A	 À©A¬¬¬¬¬¬¬¬¬BPROP   ;       ÿ   
-   BorderMode  P     PROP)   @       ÿ
-      BorderSizePixel  
-  PROP%   #       ğ      ClipsDescendants   PROP          ğ   	   Draggable          PROP   5       ï      Font  
- --
-
-
-
-
-
-
-
-PROP    <       ÿ      LayoutOrder  P     PROP#   ;       õ   
-   LineHeight   P     PROP-   D       ÿ      MaxVisibleGraphemes  
- PROP}   …       õ      Name   Title	 ğ
-	   Comments_   Globals_ rKeyword ñNumbers_   RemoteHighlight9 Strings_d ğ okens_   LinesPROP+   B       ÿ      NextSelectionDown  
-          PROP+   B       ÿ      NextSelectionLeft  
-          PROP,   C       ÿ      NextSelectionRight  
-          PROP)   @       ÿ
-      NextSelectionUp  
-          PROPB   ±       ó      Position}t  #	 4 Å
- $rÀ
- % x
- 0
- X
- (  7P    PROP          ğ      RichText        PROP/   F       ÿ      RootLocalizationTable  
-          PROP   9       ÿ      Rotation  P     PROP          ğ   
-   Selectable          PROP.   E       ÿ      SelectionImageObject  
-          PROPY   ­       ò      Size   $x  W	 % 
- Ë( ‹ f
- G
- 
-  $ #
- <  n °„00       €PROP#   ?       ÿ	      SizeConstraint  P     PROP'   f       ÿ      SourceAssetId  2 PROP   5       ï      Tags  P     PROP_   ˆ       ò      Text   <b>crystalmeth.solutions</b>6  
-! ğ
- â„¢
-made by: yth0z#7561
-:   P   1PROPo   ‹       ö   
-   TextColor3~~}~~z~}ssY	ñ [ ©
-  ttZ
-ô t\ ¬( 2}~( Q­µ ã( 
- ƒttZ°¸ æ( " ~( Qïñ —+( 
-  ttZòô ª, ¬PROP          ğ   
-   TextScaled          PROP$   9       õ      TextSize‚ À   P     PROP%   ‘       ÿ      TextStrokeColor3  _P     PROP/   G       õ      TextStrokeTransparency   P     PROP(   A       ÿ      TextTransparency    P     PROP!   =       ÿ      TextTruncate  P     PROP           ğ      TextWrapped          PROP(   ?       ÿ	      TextXAlignment  
-         PROP(   ?       ÿ	      TextYAlignment  
-         PROP          ğ      VisiblePROP   7       @    ZIndex  
- 
-
-
-
-
-
-PRNTJ         ? "  Ua q
- ¿	&?Š Sòw °    	 END     	       </roblox>
