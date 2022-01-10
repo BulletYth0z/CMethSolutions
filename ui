@@ -20,11 +20,11 @@ local WhitelistedMouse = {Enum.UserInputType.MouseButton1, Enum.UserInputType.Mo
 local BlacklistedKeys = {Enum.KeyCode.Unknown,Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.KeyCode.Up,Enum.KeyCode.Left,Enum.KeyCode.Down,Enum.KeyCode.Right,Enum.KeyCode.Slash,Enum.KeyCode.Tab,Enum.KeyCode.Backspace,Enum.KeyCode.Escape}
 
 local function CheckKey(tab, key)
-	for i, v in next, tab do
-		if v == key then
-			return true
-		end
-	end
+    for i, v in next, tab do
+        if v == key then
+            return true
+        end
+    end
 end
 
 
@@ -150,9 +150,9 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = "Default",
+        Theme = "Blue",
         ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = true,
+        ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
     },
     Flags = {},
@@ -165,53 +165,53 @@ local MainUI = game:GetObjects("rbxassetid://7835727566")[1]
 print("SolarisLib Loaded!")
 local function MakeDraggable(topbarobject, object) 
     pcall(function()
-		local dragging, dragInput, mousePos, framePos = false
-		topbarobject.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-				dragging = true
-				mousePos = input.Position
-				framePos = object.Position
+        local dragging, dragInput, mousePos, framePos = false
+        topbarobject.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                dragging = true
+                mousePos = input.Position
+                framePos = object.Position
 
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragging = false
-					end
-				end)
-			end
-		end)
-		topbarobject.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement then
-				dragInput = input
-			end
-		end)
-		UserInputService.InputChanged:Connect(function(input)
-			if input == dragInput and dragging then
-				local delta = input.Position - mousePos
-				object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-			end
-		end)
-	end)
+                input.Changed:Connect(function()
+                    if input.UserInputState == Enum.UserInputState.End then
+                        dragging = false
+                    end
+                end)
+            end
+        end)
+        topbarobject.InputChanged:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseMovement then
+                dragInput = input
+            end
+        end)
+        UserInputService.InputChanged:Connect(function(input)
+            if input == dragInput and dragging then
+                local delta = input.Position - mousePos
+                object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+            end
+        end)
+    end)
 end
 
 
 function Ripple(Object)
-	spawn(function()
-		local Circle = Instance.new("ImageLabel")
-		Circle.Parent = Object
-		Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		Circle.BackgroundTransparency = 1.000
-		Circle.ZIndex = 10
-		Circle.Image = "rbxassetid://266543268"
-		Circle.ImageColor3 = Color3.fromRGB(210,210,210)
-		Circle.ImageTransparency = 0.8
-		Circle.Position = UDim2.new(0, Mouse.X - Circle.AbsolutePosition.X, 0, Mouse.Y - Circle.AbsolutePosition.Y)
-		local Size = Object.AbsoluteSize.X
-		TweenService:Create(Circle, TweenInfo.new(0.5), {Position = UDim2.fromScale(math.clamp(Mouse.X - Object.AbsolutePosition.X, 0, Object.AbsoluteSize.X)/Object.AbsoluteSize.X,Object,math.clamp(Mouse.Y - Object.AbsolutePosition.Y, 0, Object.AbsoluteSize.Y)/Object.AbsoluteSize.Y) - UDim2.fromOffset(Size/2,Size/2), ImageTransparency = 1, Size = UDim2.fromOffset(Size,Size)}):Play()
-		spawn(function()
-			wait(0.5)
-			Circle:Destroy()
-		end)
-	end)
+    spawn(function()
+        local Circle = Instance.new("ImageLabel")
+        Circle.Parent = Object
+        Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Circle.BackgroundTransparency = 1.000
+        Circle.ZIndex = 10
+        Circle.Image = "rbxassetid://266543268"
+        Circle.ImageColor3 = Color3.fromRGB(210,210,210)
+        Circle.ImageTransparency = 0.8
+        Circle.Position = UDim2.new(0, Mouse.X - Circle.AbsolutePosition.X, 0, Mouse.Y - Circle.AbsolutePosition.Y)
+        local Size = Object.AbsoluteSize.X
+        TweenService:Create(Circle, TweenInfo.new(0.5), {Position = UDim2.fromScale(math.clamp(Mouse.X - Object.AbsolutePosition.X, 0, Object.AbsoluteSize.X)/Object.AbsoluteSize.X,Object,math.clamp(Mouse.Y - Object.AbsolutePosition.Y, 0, Object.AbsoluteSize.Y)/Object.AbsoluteSize.Y) - UDim2.fromOffset(Size/2,Size/2), ImageTransparency = 1, Size = UDim2.fromOffset(Size,Size)}):Play()
+        spawn(function()
+            wait(0.5)
+            Circle:Destroy()
+        end)
+    end)
 end
 
 function SolarisLib:Notification(title, desc)
@@ -610,7 +610,6 @@ function SolarisLib:New(Config)
         appearance:Dropdown("Theme", "The look of the user interface", {"Default", "Discord", "Red", "Green", "Blue"}, "Default", "Theme")
 
     end 
-    MusicConstructor()
 
     local function OpenTabMenu()
         TweenService:Create(MFrame.TabMenu,TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Position = UDim2.new(0,0,0,0)}):Play() 
@@ -671,19 +670,19 @@ function SolarisLib:New(Config)
                 else
                     v.Visible = true                 
                 end
-            end    		
+            end         
         end)
     end    
 
     SearchConstructor()
     
 
-	UserInputService.InputBegan:Connect(function(Input)
-		if (Input.KeyCode.Name == SolarisLib.Settings.CloseBind or Input.UserInputType.Name == SolarisLib.Settings.CloseBind) and not closebindbinding then
+    UserInputService.InputBegan:Connect(function(Input)
+        if (Input.KeyCode.Name == SolarisLib.Settings.CloseBind or Input.UserInputType.Name == SolarisLib.Settings.CloseBind) and not closebindbinding then
             uitoggled = not uitoggled
             MainUI.Visible = uitoggled
-		end
-	end)
+        end
+    end)
 
     spawn(function()
         while wait() do
@@ -824,16 +823,16 @@ function SolarisLib:New(Config)
                 ToggleMain.Name = text .. "element"
 
                 function Toggle:Set(value)
-					Toggle.Value = value
+                    Toggle.Value = value
                     TweenService:Create(ToggleMain.ToggleFrame.ToggleToggled.ToggleIco,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{ImageTransparency= Toggle.Value and 0 or 1}):Play()
                     TweenService:Create(ToggleMain.ToggleFrame.ToggleToggled.ToggleIco,TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size= Toggle.Value and UDim2.new(1,-2,1,-2) or UDim2.new(1,-6,1,-6)}):Play()
-					return callback(Toggle.Value)
-				end
-				
-				ToggleMain.MouseButton1Click:Connect(function()
-					Toggle.Value = not Toggle.Value
-					Toggle:Set(Toggle.Value)           
-				end)
+                    return callback(Toggle.Value)
+                end
+                
+                ToggleMain.MouseButton1Click:Connect(function()
+                    Toggle.Value = not Toggle.Value
+                    Toggle:Set(Toggle.Value)           
+                end)
 
                 spawn(function()
                     while wait() do
@@ -844,7 +843,7 @@ function SolarisLib:New(Config)
                     end
                 end)
 
-				Toggle:Set(def)
+                Toggle:Set(def)
                 SolarisLib.Flags[flag] = Toggle
                 return Toggle
             end    
@@ -864,18 +863,18 @@ function SolarisLib:New(Config)
                     SliderMain.SliderVal.Text = tostring(Val)
                     Slider.Value = Val
                     callback(Slider.Value)
-				end
-				SliderMain.SliderFrame.InputBegan:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = true end end)
-				SliderMain.SliderFrame.InputEnded:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = false end end)
-				game:GetService("UserInputService").InputChanged:Connect(function(input) if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then move(input) end end)
+                end
+                SliderMain.SliderFrame.InputBegan:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = true end end)
+                SliderMain.SliderFrame.InputEnded:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = false end end)
+                game:GetService("UserInputService").InputChanged:Connect(function(input) if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then move(input) end end)
 
                 function Slider:Set(val)
                     local a = tostring(val and (val / max) * (max - min) + min) or 0
-					SliderMain.SliderVal.Text = tostring(a)
+                    SliderMain.SliderVal.Text = tostring(a)
                     SliderMain.SliderFrame.SliderCurrentFrame.Size = UDim2.new((val or 0) / max, 0, 1, 0)
                     Slider.Value = val
-					return callback(Slider.Value)
-				end	
+                    return callback(Slider.Value)
+                end 
 
                 spawn(function()
                     while wait() do
@@ -934,10 +933,10 @@ function SolarisLib:New(Config)
                     if del then
                         for _,v in pairs(DropMain.Holder:GetChildren()) do
                             if v:IsA"TextButton" then
-								v:Destroy()
+                                v:Destroy()
                                 DropMain.Holder.Size = Dropdown.Toggled and UDim2.new(1,0,0,6+DropMain.Holder.Layout.AbsoluteContentSize.Y) or UDim2.new(1,0,0,0)
                                 DropMain.Size = Dropdown.Toggled and UDim2.new(1,0,0,38+DropMain.Holder.Layout.AbsoluteContentSize.Y) or UDim2.new(1,0,0,32)
-							end
+                            end
                         end    
                     end    
                     AddOptions(opts)
@@ -949,10 +948,10 @@ function SolarisLib:New(Config)
                 end)
 
                 function Dropdown:Set(val)
-					Dropdown.Value = val
+                    Dropdown.Value = val
                     DropMain.Btn.Title.Text = text .. " - " .. val
-					return callback(Dropdown.Value)
-				end
+                    return callback(Dropdown.Value)
+                end
 
                 spawn(function()
                     while wait() do
@@ -990,15 +989,15 @@ function SolarisLib:New(Config)
                         Option.ClipsDescendants = true
 
                         Option.MouseButton1Click:Connect(function()
-                            if table.find(Dropdown.Value, option) then				
-								table.remove(Dropdown.Value, table.find(Dropdown.Value, option))
-								DropMain.Btn.Title.Text = text .. " - " .. table.concat(Dropdown.Value, ", ")
-								callback(Dropdown.Value)
-							else
-								table.insert(Dropdown.Value, option)
-								DropMain.Btn.Title.Text = text .. " - " .. table.concat(Dropdown.Value, ", ")
-								callback(Dropdown.Value)
-							end
+                            if table.find(Dropdown.Value, option) then              
+                                table.remove(Dropdown.Value, table.find(Dropdown.Value, option))
+                                DropMain.Btn.Title.Text = text .. " - " .. table.concat(Dropdown.Value, ", ")
+                                callback(Dropdown.Value)
+                            else
+                                table.insert(Dropdown.Value, option)
+                                DropMain.Btn.Title.Text = text .. " - " .. table.concat(Dropdown.Value, ", ")
+                                callback(Dropdown.Value)
+                            end
                             Ripple(Option)
                         end)
 
@@ -1015,10 +1014,10 @@ function SolarisLib:New(Config)
                     if del then
                         for _,v in pairs(DropMain.Holder:GetChildren()) do
                             if v:IsA"TextButton" then
-								v:Destroy()
+                                v:Destroy()
                                 DropMain.Holder.Size = Dropdown.Toggled and UDim2.new(1,0,0,6+DropMain.Holder.Layout.AbsoluteContentSize.Y) or UDim2.new(1,0,0,0)
                                 DropMain.Size = Dropdown.Toggled and UDim2.new(1,0,0,38+DropMain.Holder.Layout.AbsoluteContentSize.Y) or UDim2.new(1,0,0,32)
-							end
+                            end
                         end    
                     end    
                     AddOptions(opts)
@@ -1030,10 +1029,10 @@ function SolarisLib:New(Config)
                 end)
 
                 function Dropdown:Set(val)
-					Dropdown.Value = val
+                    Dropdown.Value = val
                     DropMain.Btn.Title.Text = text .. " - " .. table.concat(Dropdown.Value, ", ")
-					return callback(Dropdown.Value)
-				end
+                    return callback(Dropdown.Value)
+                end
 
                 spawn(function()
                     while wait() do
@@ -1075,7 +1074,7 @@ function SolarisLib:New(Config)
                 end)
 
                 ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.Y, 0, Hue.AbsoluteSize.Y) / Hue.AbsoluteSize.Y)
-			    ColorS = (math.clamp(ColorSelection.AbsolutePosition.X - Color.AbsolutePosition.X, 0, Color.AbsoluteSize.X) / Color.AbsoluteSize.X)
+                ColorS = (math.clamp(ColorSelection.AbsolutePosition.X - Color.AbsolutePosition.X, 0, Color.AbsoluteSize.X) / Color.AbsoluteSize.X)
                 ColorV = 1 - (math.clamp(ColorSelection.AbsolutePosition.Y - Color.AbsolutePosition.Y, 0, Color.AbsoluteSize.Y) / Color.AbsoluteSize.Y)
 
                 ColorPreset.Btn.Box.BackgroundColor3 = preset
@@ -1173,11 +1172,11 @@ function SolarisLib:New(Config)
                 TextboxFrame.Box.PlaceholderText = "                  "
 
                 TextboxFrame.InputBegan:Connect(function(input)
-					if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    if input.UserInputType == Enum.UserInputType.MouseButton1 then
                         TextboxFrame.Box:CaptureFocus()
-					end
-				end)
-				
+                    end
+                end)
+                
 
                 TextboxFrame.Box.FocusLost:Connect(function()
                     local txt = TextboxFrame.Box.Text
@@ -1185,13 +1184,13 @@ function SolarisLib:New(Config)
                         TextboxFrame.Box.Text = ""
                     end  
                     return callback(txt)
-				end)
+                end)
 
                 UserInputService.InputBegan:Connect(function(input)
-					if input.KeyCode == Enum.KeyCode.Escape and TextboxFrame.Box:IsFocused() then
-						TextboxFrame.Box:ReleaseFocus()
-					end
-				end)
+                    if input.KeyCode == Enum.KeyCode.Escape and TextboxFrame.Box:IsFocused() then
+                        TextboxFrame.Box:ReleaseFocus()
+                    end
+                end)
                 
                 spawn(function()
                     while wait() do
@@ -1259,7 +1258,7 @@ function SolarisLib:New(Config)
                     self.Value = key or self.Value
                     self.Value = self.Value.Name or self.Value
                     BindFrame.BText.Text = self.Value
-				end
+                end
 
                 spawn(function()
                     while wait() do
@@ -1269,7 +1268,7 @@ function SolarisLib:New(Config)
                     end
                 end)
 
-				Bind:Set(preset)
+                Bind:Set(preset)
                 SolarisLib.Flags[flag] = Bind
                 return Bind
             end    
